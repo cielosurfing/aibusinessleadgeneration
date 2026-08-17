@@ -71,3 +71,13 @@
 
 /* Enlarge only the logo artwork while preserving the navigation bar layout. */
 .logo{transform:scale(1.5);transform-origin:left center}
+
+/* Connected lead form and active appointment calendar. */
+.form-shell,.calendar-shell{overflow:hidden;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 14px 40px rgba(6,75,82,.08)}
+.form-shell iframe{display:block;width:100%;min-height:690px;border:0}
+.calendar-shell iframe{display:block;width:100%;min-height:780px;border:0}
+.booking{background:var(--mist)}
+.contact-link{color:var(--ocean);font-weight:800;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.form-note{font-size:13px}
+.service-disclosure{padding:12px 14px;border-left:4px solid var(--coral);border-radius:0 10px 10px 0;background:var(--mist);color:var(--ink)!important;font-size:14px}
+@media(max-width:700px){.form-shell iframe{min-height:760px}.calendar-shell iframe{min-height:860px}}
